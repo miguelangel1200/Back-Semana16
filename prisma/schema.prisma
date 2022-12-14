@@ -46,3 +46,17 @@ model Category {
 
   @@map("categories")
 }
+
+model Product {
+  id            Int       @id @default(autoincrement())
+  name_pro      String
+  stock_pro     Int 
+  price_pro     Decimal?  @db.Decimal(10, 2)    
+  new_pro       Boolean   @default(false)
+  expire_date   DateTime? @db.Date
+
+  createdAt     DateTime  @default(now())
+  updateAt      DateTime  @updatedAt
+
+  @@map("products")
+}
