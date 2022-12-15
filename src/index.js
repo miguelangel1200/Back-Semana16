@@ -1,7 +1,9 @@
 import express from "express"
 import cors from "cors"
 import { PORT } from "./config.js"
-import {CategoryRouter, QuestionRouter, ChallengueRouter, ProductRouter} from "../src/components"
+import {CategoryRouter, QuestionRouter, ChallengueRouter, ProductRouter} from "./components"
+// import QuestionRouter from "./components/question/network.js"
+// import challengueRouter from "./components/challengue/network.js"
 
 const app = express()
 
