@@ -9,7 +9,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://${{ MYSQLUSER }}:${{ MYSQLPASSWORD }}@${{ MYSQLHOST }}:${{ MYSQLPORT }}/${{ MYSQLDATABASE }}"
+  url      = "mysql://root:HqN34tp3tdKXvzlASbK6@containers-us-west-168.railway.app:5784/railway"
 }
 
 model Question {
